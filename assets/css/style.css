@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 8px 1%;
+    position: fixed;
+    width: 99%;
+    top: 0px;
+    z-index: 1;
+    
+}
+.nav .nav-h1{
+    flex: 0;
+    color: white;
+    text-align: right;
+    margin: 0px 16px 0px 64px;
+}
+.nav .nav-list{
+    flex: 2;
+    margin: 0px 16px;
+}
+.nav .nav-list li{
+    display: inline-block;
+    list-style: none;
+}
+.nav .nav-list li a{
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    margin: 0px 8px;
+}
+
+.nav .nav-list li a:hover{
+    color: white;
+}
+.nav .nav-button{
+    padding: 4px 8px;
+    margin: 0px 16px 0px 0px;
+    background-color: dodgerblue;
+    border: none;
+    color: white
+}
+
+.main-section{
+    display: flex;
+    margin: 52px 0px 0px 0px;
+    flex-direction: row;
+
+}
+.side-spacing{
+    flex: 1;
+}
+.main-col{
+    flex:6;
+    display: flex;
+}
+.main-col .info-col{
+    margin: 8px;
+    flex: 4;
+}
+
+.main-col .connection-col{
+    margin: 8px;
+    flex: 3;
+}
+.col-list{
+    margin: 8px 0px;
+}
+.col-list li{
+    list-style: none;
+    margin: 0px 0px 16px 0px;
+}
+.card-header{
+    background-color: dodgerblue;
+    height: 4rem;
+}
+.card-profile{
+    height: 4rem;
+    border-radius: 50%;
+    border: 4px solid lightgray;
+    position: relative;
+    top: calc(3rem - 1.5rem);
+    left: 16px;
+}
+.icon-mark{
+    height: 15px;
+    margin: 0px 8px 0px 0px;
+}
+.card-content{
+    padding: 16px;
+    border: 2px solid lightgray;
+}
+.card-content h1{
+    margin: 16px 0px 8px 0px;
+}
+.card-content h4{
+    margin: 8px 0px;
+}
+.card-content p{
+    margin: 8px 0px;
+}
+.card-content a{
+    margin: 8px 0px;
+    color: dodgerblue;
+}
+
+.education-header{
+    background-color: rgb(60, 60, 60);
+    color: white;
+    padding: 8px 16px;
+}
+.education-content{
+    padding: 8px 16px;
+    border: 2px solid lightgray;
+}
+
+.education-content h3{
+    margin: 8px 0px 0px 0px;
+}
+.education-content h4{
+    margin: 0px 0px 8px 0px;
+    font-weight: lighter;
+}
+.education-content h4 span{
+    color: gray;
+}
+
+.connection-header{
+    background-color: rgb(60, 60, 60);
+    color: white;
+    padding: 16px 16px;
+    display: flex;
+    align-items: center;
+}
+.connection-header span{
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0px 8px 0px 0px;
+    min-width: 20px;
+    height: 20px;
+    border: 4px solid lightgray;
+}
+.connection-content{
+    background-color: white;
+    padding: 16px 16px;
+    border: 2px solid lightgray;
+}
+.connection-preview{
+    display: flex;
+    align-items: center;
+}
+.preview-image{
+    height: 2rem;
+    border-radius: 50%;
+    flex: 0;
+}
+.connection-preview h3{
+    flex: 1;
+    margin: 0px 8px 0px 8px;
+}
+.preview-icon-mark{
+    height: 1.5rem;
+    margin: 0px 8px 0px 0px;
+}
+
+.connection-container .link-div {
+    border: 2px solid lightgray;
+    border-top: none;
+    padding: 8px 16px;
+    margin: 0 auto;
+}
+.connection-container .link-div a{
+    color: dodgerblue;
+    margin: 0 auto;
+}
