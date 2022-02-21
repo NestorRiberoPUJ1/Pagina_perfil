@@ -103,9 +103,10 @@
 .card-content p{
     margin: 8px 0px;
 }
-.card-content a{
+.card-content label{
     margin: 8px 0px;
     color: dodgerblue;
+    text-decoration: underline;
 }
 
 .education-header{

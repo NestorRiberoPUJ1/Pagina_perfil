@@ -31,13 +31,13 @@
                                 <img src="assets/images/profile/jane-m.jpg" alt="jane-m" class="card-profile">
                             </div>
                             <div class="card-content">
-                                <h1>Jane Doe</h1>
+                                <h1 >Jane Doe</h1>
                                 <h4><img src="assets/images/icons/map-marker.png" alt="map-marker" class="icon-mark">Seatle</h4>
                                 <p> 
                                     Developer | Engineer | Problem Solver <br>
                                     Master of shadows an the internet
                                 </p>
-                                <a href=""><img src="assets/images/icons/gear.png" alt="map-marker" class="icon-mark">edit profile</a>
+                                <label  onclick="editProfile('.card-content h1','Nathalie Bull')"><img src="assets/images/icons/gear.png" alt="map-marker" class="icon-mark">edit profile</label>
                             </div>
                         </div>
                     </li>
@@ -60,25 +60,25 @@
                     <li>
                         <div class="connection-container">
                             <div class="connection-header">
-                                <span>2</span>
+                                <span id="requests">2</span>
                                 <h4>Connection Requests</h4>
                             </div>
                             <div class="connection-content">
                                 <ul>
-                                    <li class="connection-item">
-                                        <div class="connection-preview">
+                                    <li class="connection-item" id="connection-Todd-E">
+                                        <div class="connection-preview" >
                                             <img src="assets/images/profile/todd-s.jpg" alt="user profile" class="preview-image">
                                             <h3>Todd E</h3>
-                                            <img src="assets/images/icons/accept-circle.png" alt="accept-circle" class="preview-icon-mark">
-                                            <img src="assets/images/icons/close-circle.png" alt="close-circle" class="preview-icon-mark">
+                                            <img onclick="connectionRequest('#connection-Todd-E',true)" src="assets/images/icons/accept-circle.png" alt="accept-circle" class="preview-icon-mark">
+                                            <img onclick="connectionRequest('#connection-Todd-E',false)" src="assets/images/icons/close-circle.png" alt="close-circle" class="preview-icon-mark">
                                         </div>
                                     </li>
-                                    <li class="connection-item">
+                                    <li class="connection-item" id="connection-Phil-K">
                                         <div class="connection-preview">
                                             <img src="assets/images/profile/phil-s.jpg" alt="user profile" class="preview-image">
                                             <h3>Phil K</h3>
-                                            <img src="assets/images/icons/accept-circle.png" alt="accept-circle" class="preview-icon-mark">
-                                            <img src="assets/images/icons/close-circle.png" alt="close-circle" class="preview-icon-mark">
+                                            <img onclick="connectionRequest('#connection-Phil-K',true)" src="assets/images/icons/accept-circle.png" alt="accept-circle" class="preview-icon-mark">
+                                            <img onclick="connectionRequest('#connection-Phil-K',false)" src="assets/images/icons/close-circle.png" alt="close-circle" class="preview-icon-mark">
                                         </div>
                                     </li>
                                 </ul>
@@ -89,7 +89,7 @@
                     <li>
                         <div class="connection-container">
                             <div class="connection-header">
-                                <span>500+</span>
+                                <span id="your-connections">418</span>
                                 <h4>Your Connections</h4>
                             </div>
                             <div class="connection-content">
@@ -132,5 +132,6 @@
         </div>
         <div class="side-spacing"></div>
     </section>
+<script src="script.js"></script>
 </body>
 </html>
